@@ -15,9 +15,9 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libcamera_algoup_jni.xiaomi.so"],
-			shared_libs: [ ],
+			shared_libs: ["libgui_shim_miuicamera", "libbinder", "libcamera_client", "libcamera_metadata", "libcutils", "libgui", "liblog", "libutils", "libvndksupport", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -32,9 +32,9 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libcamera_ispinterface_jni.xiaomi.so"],
-			shared_libs: [ ],
+			shared_libs: ["libgui_shim_miuicamera", "libandroid_runtime", "libbinder", "libcamera_client", "libcamera_metadata", "libcutils", "libgui", "libhidlbase", "libhidltransport", "liblog", "libmedia", "libnativehelper", "libui", "libutils", "libvndksupport", "vendor.mediatek.hardware.camera.isphal@1.0_system", "vendor.mediatek.hardware.camera.isphal-V1-ndk", "libbinder_ndk", "libmtkisp_metadata_sys", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -49,9 +49,9 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libcamera_mianode_jni.xiaomi.so"],
-			shared_libs: [ ],
+			shared_libs: ["libgui_shim_miuicamera", "libvndksupport", "libcamera_client", "libcamera_metadata", "libgui", "libbinder", "libutils", "libcutils", "liblog", "libxml2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -66,9 +66,9 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libmtkisp_metadata_sys.so"],
-			shared_libs: [ ],
+			shared_libs: ["libui", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -83,9 +83,9 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.camera.isphal-V1-ndk.so"],
-			shared_libs: [ ],
+			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "android.hardware.graphics.common-V5-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -101,9 +101,9 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
-		: {
+		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so"],
-			shared_libs: [ ],
+			shared_libs: ["android.hardware.graphics.common@1.0", "android.hardware.graphics.common@1.1", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
